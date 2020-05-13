@@ -23,14 +23,14 @@
 			<div class="row align-items-center secondhead">
 				
 				<div class="col-md-6 col-xl-5  justify-content-center">
-					<div class="shead">
+					<div class="shead getleadspinoff" style="cursor: pointer;" ident="<? echo str_replace(" ","&nbsp;",strip_tags($config['car'][$t]['name'])); ?>" pic="<? echo $config['car'][$t]['pic']; ?>" redprice="<? echo str_replace("&nbsp;руб.","",str_replace(" ","&nbsp;",strip_tags($config['car'][$t]['redprice']))); ?>" price="<? echo str_replace("&nbsp;руб.","",str_replace(" ","&nbsp;",strip_tags($config['car'][$t]['price']))); ?>">
 						<? echo $config['car'][$t]['name'] ?>
 					
 					<img src="./img/<? echo $config['car'][$t]['pic']; ?>">
 					</div>
 				</div>
 				<div class="col-md-6 col-xl-4 justify-content-center">
-					<div class="sadv">
+					<div class="sadv getleadspinoff" style="cursor: pointer;" ident="<? echo str_replace(" ","&nbsp;",strip_tags($config['car'][$t]['name'])); ?>" pic="<? echo $config['car'][$t]['pic']; ?>" redprice="<? echo str_replace("&nbsp;руб.","",str_replace(" ","&nbsp;",strip_tags($config['car'][$t]['redprice']))); ?>" price="<? echo str_replace("&nbsp;руб.","",str_replace(" ","&nbsp;",strip_tags($config['car'][$t]['price']))); ?>">
 					<?
 					
 					echo "<span>От ".$config['car'][$t]['price']."&nbsp;руб.</span>";
@@ -91,7 +91,7 @@
 									<div class="buton gray listclick d-none d-xl-inline-block" carid="<? echo mysqli_result($res,$i,'id'); ?>">Забронировать этот автомобиль</div> 
 								</div>
 								<div class="col-12 col-md-12 col-xl-3">
-									<div class="price"><? echo str_replace(" ","&nbsp;",number_format(ceil(mysqli_result($res,$i,'Price')), 0, ',', '&nbsp;')); ?>&nbsp;руб.</div>
+									<div class="price getleadspinoff"><? echo str_replace(" ","&nbsp;",number_format(ceil(mysqli_result($res,$i,'Price')), 0, ',', '&nbsp;')); ?>&nbsp;руб.</div>
 								</div>
 								<div class="col-12 col-md-12 col-xl-4 ">
 									<div class="d-block d-xl-none" style="height:25px;"></div>
